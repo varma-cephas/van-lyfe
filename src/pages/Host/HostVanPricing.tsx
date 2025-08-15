@@ -1,6 +1,6 @@
 import { useOutletContext } from "react-router"
 export default function HostVanPricing(){
-    const {vanDetailsObj} = useOutletContext()
+    const {vanDetailsObj}:{vanDetailsObj:{price:number}} = useOutletContext()
 
     return(
         <>

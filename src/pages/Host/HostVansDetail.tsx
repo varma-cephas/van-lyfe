@@ -1,4 +1,3 @@
-import { useState } from "react";
 import arrOfVans from "../../server";
 import { Outlet, useParams, Link, NavLink } from "react-router";
 

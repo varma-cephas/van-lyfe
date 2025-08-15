@@ -13,7 +13,7 @@ import HostVansDetails from "./pages/Host/HostVansDetail";
 import HostVanInfo from "./pages/Host/HostVanInfo";
 import HostVanPricing from "./pages/Host/HostVanPricing";
 import HostVanPhotos from "./pages/Host/HostVanPhotos";
-import HostVanDetailsLayout from "./components/HostVanDetailsLayout";
+// import HostVanDetailsLayout from "./components/HostVanDetailsLayout";
 function App() {
   return (
     <BrowserRouter>
