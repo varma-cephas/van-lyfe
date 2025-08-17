@@ -1,9 +1,11 @@
-import { useParams, Link } from "react-router"
+import { useParams, Link, useLocation } from "react-router"
 import arrOfVans from "../server"
 
 
 export default function VanDetail(){
     const param = useParams();
+    const location = useLocation();
+    console.log(location)
     console.log(param)
     const theVan = arrOfVans.map(van=>{
         if(van.id===param.id){
@@ -23,9 +25,10 @@ export default function VanDetail(){
     return(
         <>
         <Link
-                to=".."
+                to={`..${location.state.filter}`}
                 className="back-button"
-            >&larr; <span>Back to all vans</span>
+
+            >&larr; <span>{`Back to ${location.state.filter.split("=")[1]?location.state.filter.split("=")[1]:"all"} vans`}</span>
         </Link>
         {theVan}
         </>

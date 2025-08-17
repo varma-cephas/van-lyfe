@@ -5,7 +5,7 @@ export default function HostVans(){
     const arrOfHostVans = arrOfVans.map(van=>{
         if(van.hostId === "123"){
          return (
-           <Link to={`${van.id}`} key={van.id} >
+           <Link to={van.id} key={van.id} >
             <div className="flex gap-2 items-center my-5 border mx-[20px] px-5 py-2 rounded-md">
                 <img src={van.imageUrl} alt="host-van-img" className="w-[15%] rounded-md" />
                 <div>
